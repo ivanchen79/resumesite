@@ -1,0 +1,73 @@
+@import "basic.less";
+
+.service {
+	#header {
+		position: absolute;
+		width: 100%;
+	}
+	
+	#content {
+		.header {
+			background-image: url(http://dummyimage.com/1920x1080/eee/ddd);
+			&.black {
+				.title, #breadcrumbs li {
+					color: black;
+				}
+			}
+		}
+		
+		.special-services {
+			padding: 100px 0;
+			.title {
+				margin-bottom: 5px;
+			    font-size: 16px;
+				color: @branding-color;
+			}
+			.subtitle {
+				margin: 0;
+				font-size: 18px;
+				font-weight: normal;
+				text-transform: uppercase;
+			}
+			p {
+				margin-bottom: 30px;
+			}
+		}
+		
+	}
+	
+	.services, .feature, .pricing {
+		padding: 100px 0;
+	}
+	
+	.services {
+		.row {
+			> div {
+				padding: 50px;
+				&:hover {
+					background: #222;
+					color: white;
+					i {
+						color: @branding-color;
+					}
+				}
+			}
+		}
+	}
+	
+	.big-dot {
+		li {
+		    float: left;
+			margin-bottom: 10px;
+		    width: 50%;
+		    line-height: 1.5;
+			&:before {
+				font-family: "fontello";
+				content: '\e810';
+				padding-right: 10px;
+				color: #757575;
+			}
+		}
+	}
+	
+}
